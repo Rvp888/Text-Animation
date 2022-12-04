@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.glow {
+    margin-top: 200px;
+    font-family: cursive;
+    color: white;
+    font-size: 1px;
+    text-align: center;
+    animation: glow 5s linear infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow:  0 0 20px #fff, 0 0 30px #a900e6, 0 0 40px #a900e6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #a900e6, 0 0 70px #a900e6, 0 0 80px #ff4da6;
+        font-size: 200px;
+    }
+}
